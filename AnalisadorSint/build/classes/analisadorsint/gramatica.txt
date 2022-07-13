@@ -1,0 +1,20 @@
+S : X O X '=';
+
+X : R | '(' X ')';
+
+O : '+' | '-' | '*' | '/';
+
+R : A | B | C | Q | 'c';
+A : 'i' D;
+D : 'i' E | 'v' |'x' | null;
+E : 'i' | null;
+B : 'v' F;
+F : 'i' G | null;
+G : 'i' E| null;
+C : 'x' K;
+K : 'x' M | A | B | 'l' N | 'c' N | null;
+M : 'x' N | A | B | null;
+N : A | B | null;
+Q : 'l' P;
+P : A | B | 'x' T | null;
+T : 'x' M | A | B | null;
